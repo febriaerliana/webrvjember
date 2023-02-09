@@ -2103,7 +2103,7 @@ form .buttons button,
 .faq-accordian .card .card-header h6 {
   cursor: pointer;
   padding: 1.75rem 2rem;
-  color: #3f43fd;
+  color: #88a47c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2119,7 +2119,7 @@ form .buttons button,
   font-size: 1.5rem;
 }
 .faq-accordian .card .card-header h6.collapsed {
-  color: #070a57;
+  color: #171717;
 }
 .faq-accordian .card .card-header h6.collapsed span {
   -webkit-transform: rotate(-180deg);
