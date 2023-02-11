@@ -154,40 +154,39 @@
                 </div>
 
                 <div class="form-group py-2">
-                  <label for="loan">Harga Bangunan</label>
+                  <label>Harga Bangunan</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text">Rp</div>
                     </div>
-                    <input type="text" name="loan" id="element" class="form-control" size="10" placeholder="Masukkan Nominal" />
+                    <input type="text" name="hargabangunan" id="hargabangunan" class="form-control" size="10" placeholder="Masukkan Nominal" onkeyup="hitung()"/>
                   </div>
                 </div>
 
                 <div class="form-group py-2">
-                  <label for="loan2">Uang Muka</label>
+                  <label>Uang Muka</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text">Rp</div>
                     </div>
-                    <input type="text" name="loan2" id="element" class="form-control" size="10" placeholder="Masukkan Nominal" />
+                    <input type="text" name="uangmuka" id="uangmuka" class="form-control" size="10" placeholder="Masukkan Nominal" onkeyup="hitung()"/>
                   </div>
                 </div>
 
                 <div class="form-group py-2">
-                  <label for="month">Lama Kredit</label>
-                  <select class="form-control" name="months">
-                    <option value="60">5 Tahun</option>
-                    <option value="120">10 Tahun</option>
-                    <option value="180">15 Tahun</option>
-                    <option value="240">20 Tahun</option>
-                    <option value="300">25 Tahun</option>
-                  </select>
+                  <label>Lama Kredit</label>
+                  <div class="input-group">
+                    <input type="text" name="bulan" id="bulan" class="form-control" placeholder="Waktu Pembayaran Cicilan yang Diajukan" onkeyup="hitung()"/>
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Tahun</div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="form-group py-2">
-                  <label for="rate">Suku bunga</label>
+                  <label>Suku bunga</label>
                   <div class="input-group">
-                    <input type="number" name="rate" class="form-control" placeholder="Suku Bunga Bank yang Berlaku" />
+                    <input type="text" name="bunga" id="bunga" class="form-control" placeholder="Suku Bunga Bank yang Berlaku" onkeyup="hitung()"/>
                     <div class="input-group-prepend">
                       <div class="input-group-text">%</div>
                     </div>
@@ -195,13 +194,68 @@
                 </div>
 
                 <div class="form-group py-2">
-                  <label for="pay">Angsuran Perbulan Yang Harus Dibayar:</label>
-                  <input type="text" name="pay" id="element" class="form-control" disabled />
+                  <label>Angsuran Perbulan Yang Harus Dibayar:</label>
+                  <input type="text" name="angsuran" id="angsuran" class="form-control" disabled />
                 </div>
 
-                <button type="button" class="btn" onClick="showpay()">Hitung Angsuran</button>
                 <button type="reset" value="Reset" class="btn btn-dark" >Reset</button>
               </form>
+              <script type="text/javascript">
+                var textharga = document.getElementById("hargabangunan")
+                textharga.addEventListener("keyup", function(e){
+                  textharga.value = currencyIdr(this.value, " ");
+                });
+                var textuangmuka = document.getElementById("uangmuka")
+                textuangmuka.addEventListener("keyup", function(e){
+                  textuangmuka.value = currencyIdr(this.value, " ");
+                });
+                var textbunga = document.getElementById("bunga");
+                var textbulan = document.getElementById("bulan");
+                
+                function currencyIdr(angka, prefix) {
+                  if (prefix != "") {
+                    var number_string = angka.replace(/[^,\d]/g, "").toString(),
+                      split = number_string.split(","),
+                      sisa = split[0].length % 3,
+                      rupiah = split[0].substr(0, sisa),
+                      ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+                    if (ribuan) {
+                      separator = sisa ? "." : "";
+                      rupiah += separator + ribuan.join(".");
+                    }
+
+                    rupiah = split[1] != undefined ? rupiah + "," + split[1] : rupiah;
+                    return prefix == undefined ? rupiah : rupiah ? " " + rupiah : "";
+                  } else {
+                    var number_string = angka.toString(),
+                      sisa = number_string.length % 3,
+                      rupiah = number_string.substr(0, sisa),
+                      ribuan = number_string.substr(sisa).match(/\d{3}/g);
+
+                    if (ribuan) {
+                      separator = sisa ? "." : "";
+                      rupiah += separator + ribuan.join(".");
+                    }
+                    return (rupiah = undefined ? rupiah : rupiah ? " " + rupiah : "");
+                  }
+                }
+
+                function hitung() {
+                  var getbangunan = document.getElementById("hargabangunan").value;
+                  var getuangmuka = document.getElementById("uangmuka").value;
+                  var totalbangunan = getbangunan.split(".").join("").split(" ").join("");
+                  var totaluangmuka = getuangmuka.split(".").join("").split(" ").join("");
+                  var lamabayar        = document.getElementById("bulan").value;
+                  var sukubunga        = document.getElementById("bunga").value;
+
+                  var semuaharga = ((totalbangunan - totaluangmuka) / (lamabayar * 12)) + ((sukubunga / 100) * (totalbangunan - totaluangmuka) / (lamabayar * 12));
+                  var currencytotal = currencyIdr(semuaharga, "");
+
+                  document.getElementById("angsuran").value = "Rp " + currencytotal;
+
+                }
+              </script>
               <!--    </div>-->
             </div>
           </div>
