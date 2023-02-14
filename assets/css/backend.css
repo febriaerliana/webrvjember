@@ -5945,7 +5945,7 @@ a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   color: #000f57 !important;
-  background-color: #2449ff !important;
+  background-color: #88a47c !important;
 }
 
 .bg-secondary {
@@ -15366,7 +15366,7 @@ a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   color: #fff !important;
-  background-color: #2449ff !important;
+  background-color: #88a47c !important;
 }
 
 .badge-primary {
@@ -15696,7 +15696,7 @@ button.badge-white:focus {
 
 .bg-primary-light {
   color: #0023d0 !important;
-  background-color: #d0d8ff !important;
+  background-color: #b9e5a6 !important;
 }
 
 a.bg-primary-light:hover,
@@ -15704,7 +15704,7 @@ a.bg-primary-light:focus,
 button.bg-primary-light:hover,
 button.bg-primary-light:focus {
   color: #0023d0 !important;
-  background-color: #9daeff !important;
+  background-color: #b9e5a6 !important;
 }
 
 .bg-secondary-light {
@@ -29228,7 +29228,7 @@ fieldset[disabled] .btn {
 }
 
 .btn-primary-dark {
-  background: #0023d0;
+  background: #66815a;
   color: #fff;
 }
 .btn-primary-dark:hover {
