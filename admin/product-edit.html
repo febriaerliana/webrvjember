@@ -67,7 +67,7 @@
                   <span class="ml-4">Member</span>
                 </a>
               </li>
-              <li class="">
+              <li class="active">
                 <a href="../admin/product.html" class="svg-icon">
                   <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
@@ -117,7 +117,7 @@
                       <span class="ml-4">News & Event</span>
                     </a>
                   </li>
-                  <li class="active">
+                  <li class="">
                     <a href="../admin/content-developer.html" class="svg-icon">
                       <svg class="svg-icon" id="p-dash016" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -211,14 +211,14 @@
                     </ul>
                   </li>
                   <!-- <li class="">
-                    <a href="../backend/timeline.html" class="svg-icon">
-                      <svg class="svg-icon" id="p-dash016" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                      </svg>
-                      <span class="ml-4">Buyer Details</span>
-                    </a>
-                  </li> -->
+                      <a href="../backend/timeline.html" class="svg-icon">
+                        <svg class="svg-icon" id="p-dash016" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span class="ml-4">Buyer Details</span>
+                      </a>
+                    </li> -->
                   <li class="">
                     <a href="../admin/order-invoice.html" class="svg-icon">
                       <svg class="svg-icon" id="p-dash07" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -402,35 +402,254 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex flex-wrap align-items-center justify-content-between breadcrumb-content">
-                    <h5>Contents > Developer</h5>
-                    <div class="d-flex align-items-center">
-                      <div class="list-grid-toggle d-flex align-items-center mr-3">
-                        <div data-toggle-extra="tab" data-target-extra="#grid" class="active">
-                          <div class="grid-icon mr-3">
-                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <rect x="3" y="3" width="7" height="7"></rect>
-                              <rect x="14" y="3" width="7" height="7"></rect>
-                              <rect x="14" y="14" width="7" height="7"></rect>
-                              <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
+              <div class="iq-edit-list-data">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="personal-information" role="tabpanel">
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                          <h4 class="card-title">Edit Phase 3 - Vivere</h4>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <form>
+                          <div class="form-group row align-items-center">
+                            <div class="col-md-6">
+                              <div class="profile-img-edit">
+                                <div class="crm-profile-img-edit">
+                                  <label for="lname">Gambar Utama Unit:</label>
+                                  <img class="crm-profile-pic rounded w-100" src="../assets/img/course-7.jpg" alt="profile-pic" />
+                                  <div class="crm-p-image bg-primary">
+                                    <i class="las la-pen upload-button"></i>
+                                    <input class="file-upload" type="file" accept="image/*" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group col-sm-6 mt-4 custom-file-small">
+                              <label for="lname">Gambar Unit Tambahan:</label>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02" />
+                                <label class="custom-file-label" for="inputGroupFile02">Upload beberapa gambar unit</label>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div data-toggle-extra="tab" data-target-extra="#list">
-                          <div class="grid-icon">
-                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <line x1="21" y1="10" x2="3" y2="10"></line>
-                              <line x1="21" y1="6" x2="3" y2="6"></line>
-                              <line x1="21" y1="14" x2="3" y2="14"></line>
-                              <line x1="21" y1="18" x2="3" y2="18"></line>
-                            </svg>
+                          <div class="row align-items-center">
+                            <div class="form-group col-sm-6">
+                              <label for="fname">Nama Unit:</label>
+                              <input type="text" class="form-control" id="fname" value="Masukkan nama unit" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label for="uname">Sisa:</label>
+                              <input type="text" class="form-control" id="uname" value="Masukkan jumlah ketersediaan unit saat ini" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label for="cname">Phase:</label>
+                              <input type="text" class="form-control" id="cname" value="Masukkan phase unit" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label for="harga">Harga:</label>
+                              <input type="text" class="form-control" id="harga" value="Masukkan harga jual unit" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label for="harga">Cicilan:</label>
+                              <input type="text" class="form-control" id="harga" value="Masukkan cicilan unit per bulan" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label>Lahan Parkir:</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option selected="">1</option>
+                                <option>2</option>
+                                <option>3</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label>Kamar Tidur:</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option selected="">1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label>Kamar Mandi:</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option selected="">1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label for="harga">Luas Bangunan:</label>
+                              <input type="text" class="form-control" id="harga" value="Masukkan luas bangunan unit (m2)" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label for="harga">Luas Tanah:</label>
+                              <input type="text" class="form-control" id="harga" value="Masukkan luas tanah unit (m2)" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label>Jumlah Lantai:</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option selected="">1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <label class="d-block">Full Furnished:</label>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadio6" name="customRadio1" class="custom-control-input" checked="" />
+                                <label class="custom-control-label" for="customRadio6"> Ya </label>
+                              </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadio7" name="customRadio1" class="custom-control-input" />
+                                <label class="custom-control-label" for="customRadio7"> Tidak </label>
+                              </div>
+                            </div>
+                            <div class="form-group col-sm-12">
+                              <label>Deskripsi Unit:</label>
+                              <textarea class="form-control" name="address" rows="5" style="line-height: 22px"> </textarea>
+                            </div>
+                            <div class="form-group col-sm-6 custom-file-small">
+                              <label for="lname">Gambar Maps Stok Unit:</label>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02" accept="image/*" />
+                                <label class="custom-file-label" for="inputGroupFile02">Upload gambar stok</label>
+                              </div>
+                            </div>
+                            <div class="form-group col-sm-6 custom-file-small">
+                              <label for="lname">Video Unit:</label>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02" accept="video/*" />
+                                <label class="custom-file-label" for="inputGroupFile02">Upload video</label>
+                              </div>
+                            </div>
                           </div>
+                          <button class="btn btn-primary mr-2"><a href="../admin/product-detail.html" style="color: aliceblue">Submit</a></button>
+                          <button class="btn iq-bg-danger"><a href="../admin/product-detail.html">Cancel</a></button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="chang-pwd" role="tabpanel">
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                          <h4 class="card-title">Change Password</h4>
                         </div>
                       </div>
-                      <div class="pl-3 border-left btn-new">
-                        <a href="#" class="btn btn-primary" data-target="#new-user-modal" data-toggle="modal">Add Developer</a>
+                      <div class="card-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="cpass">Current Password:</label>
+                            <a href="javascripe:void();" class="float-right">Forgot Password</a>
+                            <input type="Password" class="form-control" id="cpass" value="" />
+                          </div>
+                          <div class="form-group">
+                            <label for="npass">New Password:</label>
+                            <input type="Password" class="form-control" id="npass" value="" />
+                          </div>
+                          <div class="form-group">
+                            <label for="vpass">Verify Password:</label>
+                            <input type="Password" class="form-control" id="vpass" value="" />
+                          </div>
+                          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                          <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="emailandsms" role="tabpanel">
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                          <h4 class="card-title">Email and SMS</h4>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <form>
+                          <div class="form-group row align-items-center">
+                            <label class="col-md-3" for="emailnotification">Email Notification:</label>
+                            <div class="col-md-9 custom-control custom-switch">
+                              <input type="checkbox" class="custom-control-input" id="emailnotification" checked="" />
+                              <label class="custom-control-label" for="emailnotification"></label>
+                            </div>
+                          </div>
+                          <div class="form-group row align-items-center">
+                            <label class="col-md-3" for="smsnotification">SMS Notification:</label>
+                            <div class="col-md-9 custom-control custom-switch">
+                              <input type="checkbox" class="custom-control-input" id="smsnotification" checked="" />
+                              <label class="custom-control-label" for="smsnotification"></label>
+                            </div>
+                          </div>
+                          <div class="form-group row align-items-center">
+                            <label class="col-md-3" for="npass">When To Email</label>
+                            <div class="col-md-9">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="email01" />
+                                <label class="custom-control-label" for="email01">You have new notifications.</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="email02" />
+                                <label class="custom-control-label" for="email02">You're sent a direct message</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="email03" checked="" />
+                                <label class="custom-control-label" for="email03">Someone adds you as a connection</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row align-items-center">
+                            <label class="col-md-3" for="npass">When To Escalate Emails</label>
+                            <div class="col-md-9">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="email04" />
+                                <label class="custom-control-label" for="email04"> Upon new order.</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="email05" />
+                                <label class="custom-control-label" for="email05"> New membership approval</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="email06" checked="" />
+                                <label class="custom-control-label" for="email06"> Member registration</label>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                          <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="manage-contact" role="tabpanel">
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                          <h4 class="card-title">Manage Contact</h4>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="cno">Contact Number:</label>
+                            <input type="text" class="form-control" id="cno" value="001 2536 123 458" />
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email" value="Barryjone@demo.com" />
+                          </div>
+                          <div class="form-group">
+                            <label for="url">Url:</label>
+                            <input type="text" class="form-control" id="url" value="https://getbootstrap.com" />
+                          </div>
+                          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                          <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -438,163 +657,6 @@
               </div>
             </div>
           </div>
-          <div id="grid" class="item-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="card-transparent card-block card-stretch card-height">
-                  <div class="card-body text-center p-0">
-                    <div class="item">
-                      <div class="odr-img">
-                        <img src="../assets/img/trainers/trainer-1.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image" />
-                      </div>
-                      <div class="odr-content rounded">
-                        <h4 class="mb-2">Dandy Bernady</h4>
-                        <p class="mb-3">dandybernady@gmail.com</p>
-                        <ul class="list-unstyled mb-3">
-                          <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                          <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                          <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                        </ul>
-                        <div class="pt-3 border-top">
-                          <p class="text-primary" style="font-style: italic">Owner Rich Village</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card-transparent card-block card-stretch card-height">
-                  <div class="card-body text-center p-0">
-                    <div class="item">
-                      <div class="odr-img">
-                        <img src="../assets/img/trainers/trainer-2.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image" />
-                      </div>
-                      <div class="odr-content rounded">
-                        <h4 class="mb-2">Diah</h4>
-                        <p class="mb-3">diahindah87@gmail.com</p>
-                        <ul class="list-unstyled mb-3">
-                          <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                          <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                          <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                        </ul>
-                        <div class="pt-3 border-top">
-                          <p class="text-primary" style="font-style: italic">Staff Marketing</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card-transparent card-block card-stretch card-height">
-                  <div class="card-body text-center p-0">
-                    <div class="item">
-                      <div class="odr-img">
-                        <img src="../assets/img/trainers/rofi-arsiyandi.jpg" class="img-fluid rounded-circle avatar-90 m-auto" alt="image" />
-                      </div>
-                      <div class="odr-content rounded">
-                        <h4 class="mb-2">Rofi Arsiyandi</h4>
-                        <p class="mb-3">rofiarsy83@gmail.com</p>
-                        <ul class="list-unstyled mb-3">
-                          <li class="bg-secondary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-mail-open-line m-0"></i></li>
-                          <li class="bg-primary-light rounded-circle iq-card-icon-small mr-4"><i class="ri-chat-3-line m-0"></i></li>
-                          <li class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></li>
-                        </ul>
-                        <div class="pt-3 border-top">
-                          <p class="text-primary" style="font-style: italic">Staff Marketing</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="list" class="item-content animate__animated animate__fadeIn" data-toggle-extra="tab-content">
-            <div class="table-responsive rounded bg-white mb-4">
-              <table class="table mb-0 table-borderless tbl-server-info">
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="media align-items-center">
-                        <img src="../assets/img/trainers/trainer-1.jpg" class="img-fluid rounded-circle avatar-40" alt="image" />
-                        <h5 class="ml-3">Dandy Bernady</h5>
-                      </div>
-                    </td>
-                    <td>dandybernady@gmail.com</td>
-                    <td>
-                      <div class="media align-items-center">
-                        <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                        <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                        <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                      </div>
-                    </td>
-                    <td>
-                      <p class="text-primary" style="font-style: italic">Owner Rich Village</p>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                        <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="media align-items-center">
-                        <img src="../assets/img/trainers/trainer-2.jpg" class="img-fluid rounded-circle avatar-40" alt="image" />
-                        <h5 class="ml-3">Diah</h5>
-                      </div>
-                    </td>
-                    <td>diahindah87@gmail.com</td>
-                    <td>
-                      <div class="media align-items-center">
-                        <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                        <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                        <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                      </div>
-                    </td>
-                    <td>
-                      <p class="text-primary" style="font-style: italic">Staff Marketing</p>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                        <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="media align-items-center">
-                        <img src="../assets/img/trainers/rofi-arsiyandi.jpg" class="img-fluid rounded-circle avatar-40" alt="image" />
-                        <h5 class="ml-3">Rofi Arsiyandi</h5>
-                      </div>
-                    </td>
-                    <td>rofiarsy83@gmail.com</td>
-                    <td>
-                      <div class="media align-items-center">
-                        <div class="bg-secondary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-mail-open-line m-0"></i></div>
-                        <div class="bg-primary-light rounded-circle iq-card-icon-small mr-3"><i class="ri-chat-3-line m-0"></i></div>
-                        <div class="bg-success-light rounded-circle iq-card-icon-small"><i class="ri-phone-line m-0"></i></div>
-                      </div>
-                    </td>
-                    <td>
-                      <p class="text-primary" style="font-style: italic">Staff Marketing</p>
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <a href="#" class="text-body"><i class="las la-pen mr-3"></i></a>
-                        <a href="#" class="text-body"><i class="las la-trash-alt mr-0"></i></a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <!-- Page end  -->
         </div>
       </div>
     </div>
@@ -730,7 +792,7 @@
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header d-block text-center pb-3 border-bttom">
-            <h3 class="modal-title" id="exampleModalCenterTitle02">Add Developer</h3>
+            <h3 class="modal-title" id="exampleModalCenterTitle02">New User</h3>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -763,12 +825,24 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group mb-3">
-                  <label for="exampleInputText2" class="h5">Jabatan</label>
+                  <label for="exampleInputText2" class="h5">Type</label>
                   <select name="type" class="selectpicker form-control" data-style="py-0">
-                    <option>Owner</option>
-                    <option>Staff Marketing</option>
-                    <option>Staff Marketing Junior</option>
-                    <option>Staff EM</option>
+                    <option>Type</option>
+                    <option>Trainee</option>
+                    <option>Employee</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mb-3">
+                  <label for="exampleInputText2" class="h5">Role</label>
+                  <select name="type" class="selectpicker form-control" data-style="py-0">
+                    <option>Role</option>
+                    <option>Designer</option>
+                    <option>Developer</option>
+                    <option>Manager</option>
+                    <option>BDE</option>
+                    <option>SEO</option>
                   </select>
                 </div>
               </div>
