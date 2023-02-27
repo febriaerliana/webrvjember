@@ -184,21 +184,11 @@
                         <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
                         <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
                       </svg>
-                      <span class="ml-4">Document</span>
-                      <i class="las la-angle-right iq-arrow-right arrow-active"></i>
-                      <i class="las la-angle-down iq-arrow-right arrow-hover"></i>
+                      <span class="ml-4">Total Transaction</span>
                     </a>
-                    <ul id="auth" class="iq-submenu collapse" data-parent="#otherpage">
-                      <li class="">
-                        <a href="../admin/order-total-transaction.html"> <i class="las la-minus"></i><span>Total Transaction</span> </a>
-                      </li>
-                      <li class="">
-                        <a href="../admin/order-payment-history.html"> <i class="las la-minus"></i><span>Payment History</span> </a>
-                      </li>
-                    </ul>
                   </li>
                   <li class="">
-                    <a href="../admin/order-invoice.html" class="svg-icon">
+                    <a href="../admin/order-payment-history.html" class="svg-icon">
                       <svg class="svg-icon" id="p-dash07" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                         <polyline points="14 2 14 8 20 8"></polyline>
@@ -206,7 +196,15 @@
                         <line x1="16" y1="17" x2="8" y2="17"></line>
                         <polyline points="10 9 9 9 8 9"></polyline>
                       </svg>
-                      <span class="ml-4">Invoice</span>
+                      <span class="ml-4">Payment History</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="../admin/order-file.html" class="svg-icon">
+                      <svg class="svg-icon" id="p-dash07" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 10H2V4.003C2 3.449 2.455 3 2.992 3h18.016A.99.99 0 0 1 22 4.003V10h-1v10.001a.996.996 0 0 1-.993.999H3.993A.996.996 0 0 1 3 20.001V10zm16 0H5v9h14v-9zM4 5v3h16V5H4zm5 7h6v2H9v-2z" />
+                      </svg>
+                      <span class="ml-4">File</span>
                     </a>
                   </li>
                 </ul>
@@ -521,7 +519,7 @@
                                 <td style="text-align: center"><span class="badge bg-primary">Proses</span></td>
                                 <td onclick="myFunction()" style="cursor: pointer">Son Seungwan</td>
                                 <td>(760) 756 7568</td>
-                                <td>Phase 3 - La Roche</td>
+                                <td><a style="color: black" href="order-process-detail-son-seungwan.html">Phase 3 - La Roche</a></td>
                                 <td style="text-align: center">77</td>
                                 <td style="text-align: center">Tunai</td>
                                 <td style="text-align: center">
@@ -705,7 +703,7 @@
                             }
                           </script>
                         </div>
-                        <div id="profile5" class="tab-pane fade"><p>ini slide ke 5</p></div>
+                        <div id="profile5" class="tab-pane fade"><p style="text-align: center; padding-top: 15px">Tidak ada data</p></div>
                         <div id="profile6" class="tab-pane fade">
                           <table id="user-list-table" class="table table-striped dataTable mt-4" role="grid" aria-describedby="user-list-page-info">
                             <thead>
