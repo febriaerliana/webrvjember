@@ -126,7 +126,7 @@
                 </div>
                 
                 <button class="sumbit">
-                  <a href="login.html" style="color: aliceblue">Submit</a>
+                  <a href="login.html" style="color: aliceblue" data-toggle="modal" data-target="#validasi">Submit</a>
                   <i class="uil uil-navigator"></i>
                 </button>
                 <p class="mb-5 pb-lg-2" style="color: #393f81">Already have an account? <a href="login.html" style="color: #393f81">Login here</a></p>
@@ -136,6 +136,27 @@
       <!-- End Login Section -->
     </main>
     <!-- End #main -->
+
+<!-- Modal -->
+<div class="modal fade" id="validasi" role="dialog" aria-modal="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block text-center pb-3 border-bttom">
+        <h4 class="modal-title" id="exampleModalCenterTitle">Apakah Data sudah benar?</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6">
+              <div class="btn btn-dark" data-dismiss="modal">Salah</div>
+            </div>
+          <div class="col-lg-6">
+            <a href="login.html"><div class="btn btn-dark">Benar</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- ======= Footer ======= -->
     <div class="footer-clean pt-5">
@@ -183,6 +204,9 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
