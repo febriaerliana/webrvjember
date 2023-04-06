@@ -151,53 +151,48 @@
                 </div>
               </div>
             </div>
-
-            <!-- <div class="card mb-4">
-              <div class="card-body p-4 d-flex flex-row">
-                <div class="form-outline flex-fill">
-                  <input type="text" id="form1" class="form-control form-control-lg" />
-                  <label class="form-label" for="form1">Discound code</label>
-                </div>
-                <button type="button" class="btn btn-outline-warning btn-lg ms-3">Apply</button>
-              </div>
-            </div> -->
-
             <div class="card">
               <div class="card-body">
                 <a href="#"> <button type="button" class="btn" data-target="#cart-modal" data-toggle="modal">Proceed to Pay</button></a>
               </div>
             </div>
-            <!-- <button id="btnStart" type="button" class="btn" data-toggle="modal" data-target="#formModal">Proceed to Pay</button> -->
           </div>
         </div>
       </div>
     </section>
 
     <!-- Modal -->
+    <div class="modal fade" id="logout-modal" role="dialog" aria-modal="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block text-center pb-3 border-bttom">
+            <h4 class="modal-title" id="exampleModalCenterTitle">Yakin ingin keluar?</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="btn" data-dismiss="modal">Batal</div>
+              </div>
+              <div class="col-lg-6">
+                <a href="../login.html"><div class="btn">Keluar</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header border-bottom-0">
             <h5 class="modal-title" id="exampleModalLabel">Ubah nomor Unit :</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
           </div>
           <form>
             <img src="../assets/img/stok-vivere.jpg" class="img-fluid" alt="" />
             <div class="modal-body">
               <div class="form-group">
                 <input type="number" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Masukkan nomor unit yang ingin dibeli" />
-                <!-- <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small> -->
               </div>
-              <!-- <div class="form-group">
-                <label for="password1">Password</label>
-                <input type="password" class="form-control" id="password1" placeholder="Password" />
-              </div>
-              <div class="form-group">
-                <label for="password1">Confirm Password</label>
-                <input type="password" class="form-control" id="password2" placeholder="Confirm Password" />
-              </div> -->
             </div>
             <div class="modal-footer border-top-0 d-flex justify-content-center">
               <a type="button" class="btn" href="cart.html"> Tambah ke Cart</a>
@@ -215,29 +210,10 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-lg-6">
-                <div class="btn btn-dark" data-dismiss="modal">Salah</div>
+                <div class="btn" data-dismiss="modal">Salah</div>
               </div>
               <div class="col-lg-6">
-                <a href="order-form.html"><div class="btn btn-dark">Benar</div></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="logout-modal" role="dialog" aria-modal="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header d-block text-center pb-3 border-bttom">
-            <h4 class="modal-title" id="exampleModalCenterTitle">Yakin ingin keluar?</h4>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="btn btn-dark" data-dismiss="modal">Batal</div>
-              </div>
-              <div class="col-lg-6">
-                <a href="login.html"><div class="btn btn-dark">Keluar</div></a>
+                <a href="order-form.html"><div class="btn">Benar</div></a>
               </div>
             </div>
           </div>
@@ -246,7 +222,7 @@
     </div>
 
     <!-- ======= Footer ======= -->
-    <div class="footer-clean" style="margin-top: 16rem">
+    <div class="footer-clean" style="margin-top: 3rem">
       <footer>
         <div class="container">
           <div class="row justify-content-center">

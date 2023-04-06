@@ -116,7 +116,7 @@
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
-        <a href="../index.html" class="get-started-btn">Logout</a>
+        <a href="#" class="get-started-btn" data-target="#logout-modal" data-toggle="modal">Logout</a>
       </div>
     </header>
     <!-- End Header -->
@@ -131,33 +131,14 @@
                 <div class="rounded-top text-white d-flex flex-row" style="background-color: #000; height: 200px">
                   <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px; z-index: 2">
                     <img src="../assets/img/user-profile.png" alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 2" />
-                    <!-- <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark" style="z-index: 1">Edit profile</button> -->
                   </div>
                   <div class="ms-3" style="margin-top: 130px">
                     <h5>Wendy</h5>
                     <p>22 th, Jember</p>
                   </div>
                 </div>
-                <!-- <div class="p-4 text-black" style="background-color: #214568">
-                  <div class="d-flex justify-content-end text-center py-1">
-                    <div>
-                      <p class="mb-1 h5">253</p>
-                      <p class="small text-muted mb-0">Photos</p>
-                    </div>
-                    <div class="px-3">
-                      <p class="mb-1 h5">1026</p>
-                      <p class="small text-muted mb-0">Followers</p>
-                    </div>
-                    <div>
-                      <p class="mb-1 h5">478</p>
-                      <p class="small text-muted mb-0">Following</p>
-                    </div>
-                  </div>
-                </div> -->
                 <div class="card-body p-4 text-black">
                   <div class="mb-1">
-                    <!-- tadi mb-5 -->
-                    <!-- <p class="lead fw-normal mb-1">About</p> -->
                     <div class="row p-5">
                       <div class="kertas-biodata">
                         <div class="biodata">
@@ -206,35 +187,9 @@
                         </div>
                       </div>
                     </div>
-                    <!-- <a href="edit-profile.html" class="btn">Edit Profile</a> -->
-
-                    <!-- <div class="container"> -->
                     <button type="button" class="btn" data-toggle="modal" data-target="#form">Edit Profile</button>
-
                     <button type="button" class="btn" data-toggle="modal" data-target="#form2">Ubah Password</button>
-                    <!-- </div> -->
                   </div>
-
-                  <!-- <div class="d-flex justify-content-between align-items-center mb-4">
-                    <p class="lead fw-normal mb-0">Recent See</p>
-                    <p class="lead fw-normal mb-0"><a href="#!" class="text-muted">Show all</a></p>
-                  </div>
-                  <div class="row g-2">
-                    <div class="col mb-2">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(112).webp" alt="image 1" class="w-100 rounded-3" />
-                    </div>
-                    <div class="col mb-2">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(107).webp" alt="image 1" class="w-100 rounded-3" />
-                    </div>
-                  </div>
-                  <div class="row g-2">
-                    <div class="col">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(108).webp" alt="image 1" class="w-100 rounded-3" />
-                    </div>
-                    <div class="col">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(114).webp" alt="image 1" class="w-100 rounded-3" />
-                    </div>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -245,6 +200,27 @@
       <!-- End Trainers Section -->
     </main>
     <!-- End #main -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="logout-modal" role="dialog" aria-modal="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block text-center pb-3 border-bttom">
+            <h4 class="modal-title" id="exampleModalCenterTitle">Yakin ingin keluar?</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="btn" data-dismiss="modal">Batal</div>
+              </div>
+              <div class="col-lg-6">
+                <a href="../login.html"><div class="btn">Keluar</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">

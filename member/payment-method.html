@@ -113,7 +113,7 @@
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
-        <a href="../index.html" class="get-started-btn">Logout</a>
+        <a href="#" class="get-started-btn" data-target="#logout-modal" data-toggle="modal">Logout</a>
       </div>
     </header>
     <!-- End Header -->
@@ -203,7 +203,27 @@
         </div>
       </div>
     </div>
-
+    
+    <!-- Modal -->
+    <div class="modal fade" id="logout-modal" role="dialog" aria-modal="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block text-center pb-3 border-bttom">
+            <h4 class="modal-title" id="exampleModalCenterTitle">Yakin ingin keluar?</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="btn" data-dismiss="modal">Batal</div>
+              </div>
+              <div class="col-lg-6">
+                <a href="../login.html"><div class="btn">Keluar</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ======= Footer ======= -->
     <div class="footer-clean">
       <footer>
